@@ -1,5 +1,4 @@
-# Analit
-## Analog Literals for Rust
+# Analit: Analog Literals for Rust
 For all of Rust's great improvements on the status quo of systems languages, one feature has been sorely missing. No, it's not higher-kinded-types, or integer generics, or having a name that includes the letter 'C'--it's analog literals. Ever since Eelis debuted "Analog Literals" in 2005 [as a C++ utility](http://www.eelis.net/C++/analogliterals.xhtml), the ability to draw geometry out using ASCII in one's source code has become a new bar for what constitutes a minimal-viable-language.
 
 ## Examples
