@@ -51,7 +51,7 @@ assert_eq!((1,1,3),analit!(
 ```
 It's like it's coming right out of the screen!
 
-## Using Analog Literals in Your Next Project
+## Using Analog Literals in Your Next Project*
 Simply add the following to your `Cargo.toml`
 
 ```toml
@@ -64,4 +64,4 @@ Or, from the registry:
 [dependencies]
 analit = "*"
 ```
-
+*Please don't.
