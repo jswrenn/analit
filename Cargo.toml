@@ -1,0 +1,4 @@
+[package]
+name = "analit"
+version = "0.0.1"
+authors = ["John Wrenn <johnswrenn@gmail.com>"]
