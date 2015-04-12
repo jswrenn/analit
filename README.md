@@ -14,7 +14,7 @@ assert_eq!(1, analit!(
 
 A line of length four:
 ```rust
-assert_eq!(1, analit!(
+assert_eq!(4, analit!(
     +--------+
 ));
 ```
