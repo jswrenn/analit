@@ -1,4 +1,9 @@
 [package]
 name = "analit"
-version = "0.0.1"
+version = "0.1.0"
 authors = ["John Wrenn <johnswrenn@gmail.com>"]
+
+description = "Add another dimension to your Rust project with analog geometric literals."
+repository = "https://github.com/jswrenn/analit"
+keywords = ["analog","geometry","2D","3D"]
+license = "MIT"
