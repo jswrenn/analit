@@ -5,37 +5,66 @@ For all of Rust's great improvements on the status quo of systems languages, one
 Analog literals follow a simple syntactic pattern. The pointy corners of things are marked by '+' characters, one unit in the x-axis is represented by '--', and one unit in the Y and Z axes are represented by '|' and '/', respectively. The reason two characters are used to represent just one unit in the x-axis is to compensate for the rectangular shape that characters are rendered with. Analog expressions return a tuple reflecting the dimensions of the drawing. But enough talk--let's see some examples:
 
 ### One-Dimensional
-A line of length one:
+A line of length two along the X axis:
 ```rust
-assert_eq!(1, analit!(
-    +--+
+assert_eq!(2, analit!(
+        +----+
+    ));
+``` 
+ 
+A line of length two along the Y axis:
+```rust
+assert_eq!(2, analit!(
+    +
+    |
+    |
+    +
 ));
 ```
 
-A line of length four:
+A line of length two along the Z axis:
 ```rust
-assert_eq!(4, analit!(
-    +--------+
+assert_eq!(2,analit!(
+       +
+      /
+     /
+    +
 ));
 ```
 
 ### Two-Dimensional
-Two dimensional literals have proven themselves especially valuable to GUI programmers. A square:
+Two dimensional literals have proven themselves especially valuable to GUI programmers. 
+
+A (2,1) rectangle defined across X and Y:
 ```rust
-assert_eq!((1,1),analit!(
-    +--+
-    |  |
-    +--+
+assert_eq!((2,1),analit!(
+    +----+
+    |    |
+    +----+
 ));
 ```
-A delicious bar of chocolate:
+
+...across X and Z:
 ```rust
-assert_eq!((8,1),analit!(
-    +----------------+
-    |                |
-    +----------------+
+assert_eq!((2,1),analit!(
+      +----+
+     /    /
+    +----+
 ));
 ```
+
+...across Y and Z:
+```rust
+assert_eq!((2,1),analit!(
+       +
+      /|
+     / +
+    + /
+    |/
+    +
+));
+```
+
 ### Three-Dimensional
 It's time to dig those red-and-blue glasses out from between the couch cushions; we're going into the next dimension!
 ```rust
